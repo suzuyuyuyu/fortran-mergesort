@@ -1,0 +1,36 @@
+*
+!*/
+!*.*
+![M|m]akefile
+![D|d]ockerfile
+*.exe
+a.out
+/.github/*
+
+# OS
+Thumbs.db
+ehthumbs.db
+~$*
+Desktop.ini
+*.DS_Store*
+__MACOSX/
+*.AppleDouble*
+*.LSOverride*
+*Zone.Identifier
+# Editor
+*.swp
+._*
+*.~
+*.un*
+.viminfo
+
+*.bak
+
+*.mod
+*.o
+*.a
+include/
+build/
+lib/
+bin/
+obj/
