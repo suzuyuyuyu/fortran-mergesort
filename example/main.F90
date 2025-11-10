@@ -1,6 +1,6 @@
 program main
   use, intrinsic :: iso_fortran_env
-  use sort_lib
+  use merge_sort_mod
   implicit none
   integer :: i, m, n
   integer, allocatable :: arr(:), twod_arr(:, :), hist(:)
@@ -25,7 +25,8 @@ program main
   print'(10f5.1)', corresp
 
   call sort(arr, hist)
-  call rearrange(corresp, hist)
+  ! call rearrange(corresp, hist)
+  corresp(:) = corresp(hist(:))
 
   print'("Sorted array:")'
   print'(10i5)', arr

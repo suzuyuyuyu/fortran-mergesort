@@ -37,7 +37,7 @@ _MKDIR:
 	mkdir -p $(LIB_OUT_DIR) $(INC_OUT_DIR) $(OBJ_DIR)
 
 .PHONY: clean
-clean: clean-dir clean-file
+clean: clean-file clean-dir
 
 clean-file:
 	rm -rf $(TARGET_FULLPATH) $(OBJ) $(INC_OUT_DIR)/*.mod

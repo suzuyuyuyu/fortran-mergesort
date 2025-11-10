@@ -1,7 +1,8 @@
 # compiler and flags
 FC=ifx
 FFLAGS=-O2
-FFLAGS+= -Wall -Wextra -g -fbacktrace -fbounds-check -ffpe-trap=invalid,zero,overflow
+# FFLAGS+= -Wall -Wextra -g -fbacktrace -fbounds-check -ffpe-trap=invalid,zero,overflow
+
 
 SRC_DIR=.
 INC_DIR=../include
